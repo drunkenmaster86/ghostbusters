@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
     <link rel="stylesheet" href="styles.css" >
 </head>
 <body>
@@ -125,10 +126,10 @@
     <section class="cast">
         <div class="container">
             <div class="tabs">
-                <h2 class="section-title active">Актеры</h2>
-                <h2 class="section-title">Создатели</h2>
+                <h2 class="tab section-title active" data-target="#actors">Актеры</h2>
+                <h2 class="tab section-title"  data-target="#creators">Создатели</h2>
             </div>
-            <div class="tabs-content">
+            <div class="tabs-content visible" id="actors">
                 <div class="card">
                     <img src="img/actors/1.png" alt="Кэрри Кун" class="card-image">
                     <div class="card-text">
@@ -138,15 +139,7 @@
                 </div>
                 <!--/.card-->
                 <div class="card">
-                    <img src="img/actors/2.png" alt="МакКенна Грейс" class="card-image">
-                    <div class="card-text">
-                        <h3 class="name">МакКенна Грейс</h3>
-                        <span class="en-name">Mckenna Grace</span>
-                    </div>
-                </div>
-                <!--/.card-->
-                <div class="card">
-                    <img src="img/actors/3.png" alt="Билл Мюррей" class="card-image">
+                    <img src="img/actors/2.png" alt="Билл Мюррей" class="card-image">
                     <div class="card-text">
                         <h3 class="name">Билл Мюррей</h3>
                         <span class="en-name">Bill Murray</span>
@@ -154,15 +147,7 @@
                 </div>
                 <!--/.card-->
                 <div class="card">
-                    <img src="img/actors/4.png" alt="Дэн Эйкройд" class="card-image">
-                    <div class="card-text">
-                        <h3 class="name">Дэн Эйкройд</h3>
-                        <span class="en-name">Dan Aykroyd</span>
-                    </div>
-                </div>
-                <!--/.card-->
-                <div class="card">
-                    <img src="img/actors/5.png" alt="Пол Радд" class="card-image">
+                    <img src="img/actors/3.png" alt="Пол Радд" class="card-image">
                     <div class="card-text">
                         <h3 class="name">Пол Радд</h3>
                         <span class="en-name">Paul Rudd</span>
@@ -170,18 +155,34 @@
                 </div>
                 <!--/.card-->
                 <div class="card">
-                    <img src="img/actors/6.png" alt="Эрни Хадсон" class="card-image">
+                    <img src="img/actors/4.png" alt="Энни Поттс" class="card-image">
                     <div class="card-text">
-                        <h3 class="name">Эрни Хадсон</h3>
-                        <span class="en-name">Ernie Hudson</span>
+                        <h3 class="name">Энни Поттс</h3>
+                        <span class="en-name">Annie Potts</span>
                     </div>
                 </div>
                 <!--/.card-->
                 <div class="card">
-                    <img src="img/actors/7.png" alt="Энни Поттс" class="card-image">
+                    <img src="img/actors/5.png" alt="МакКенна Грейс" class="card-image">
                     <div class="card-text">
-                        <h3 class="name">Энни Поттс</h3>
-                        <span class="en-name">Annie Potts</span>
+                        <h3 class="name">МакКенна Грейс</h3>
+                        <span class="en-name">Mckenna Grace</span>
+                    </div>
+                </div>
+                <!--/.card-->
+                <div class="card">
+                    <img src="img/actors/6.png" alt="Дэн Эйкройд" class="card-image">
+                    <div class="card-text">
+                        <h3 class="name">Дэн Эйкройд</h3>
+                        <span class="en-name">Dan Aykroyd</span>
+                    </div>
+                </div>
+                <!--/.card-->
+                <div class="card">
+                    <img src="img/actors/7.png" alt="Эрни Хадсон" class="card-image">
+                    <div class="card-text">
+                        <h3 class="name">Эрни Хадсон</h3>
+                        <span class="en-name">Ernie Hudson</span>
                     </div>
                 </div>
                 <!--/.card-->
@@ -194,43 +195,80 @@
                 </div>
                 <!--/.card-->
             </div>
-            <!-- /.tabs-content -->
+                    <!-- /.tabs-content -->
+            <div class="tabs-content" id="creators">
+                <div class="card">
+                    <img src="img/creators/1.jpg" alt="Джейсон Райтман" class="card-image">
+                    <div class="card-text">
+                        <h3 class="name">Джейсон Райтман</h3>
+                        <span class="en-name">Jason Reitman</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="img/creators/2.png" alt="Дэн Эйкройд" class="card-image">
+                    <div class="card-text">
+                        <h3 class="name">Дэн Эйкройд</h3>
+                        <span class="en-name">Dan Aykroyd</span>
+                    </div>
+                </div>
+                    <!-- /.card -->
+            
+            </div>
         </div>
     </section>
     <section class="news">
         <div class="container">
             <h2 class="section-title section-news-title">Новости по теме</h2>
-            <div class="news-cards">
-                <div class="news-card">
-                    <h3 class="news-title">31 марта 2020</h3>
-                    <span class="news-date">«Морбиуса» и «Охотников за привидениями»
-                         перенесли на следующий год</span>  
-                </div>
-
-                <div class="news-card">
-                    <h3 class="news-title">9 декабря 2019</h3>
-                    <span class="news-date">Наследники: Вышел дебютный трейлер
-                         новых «Охотников за привидениями»</span>
-                </div>
-
-                <div class="news-card">
-                    <h3 class="news-title">11 ноября 2019</h3>
-                    <span class="news-date">Новые «Охотники за привидениями»
-                         обзавелись названием</span>
-                  </div>    
-              
-                <div class="news-card">
-                    <h3 class="news-title">19 октября 2019</h3>
-                    <span class="news-date">Завершились съёмки новых «Охотников за привидениями»
-                    </span>
-                 </div>    
-               
+            <!-- Slider main container -->
+  <div class="swiper-container">
+    <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+            <div class="news-card">
+                <h3 class="news-title">31 марта 2020</h3>
+                <span class="news-date">«Морбиуса» и «Охотников за привидениями»
+                     перенесли на следующий год</span>  
             </div>
-            <!-- /.news-cards -->
         </div>
+        <!--./swiper-slide-->
+        <div class="swiper-slide">
+            <div class="news-card">
+                <h3 class="news-title">9 декабря 2019</h3>
+                <span class="news-date">Наследники: Вышел дебютный трейлер
+                     новых «Охотников за привидениями»</span>
+            </div>
+        </div>
+        <!--./swiper-slide-->
+        <div class="swiper-slide">
+            <div class="news-card">
+                <h3 class="news-title">11 ноября 2019</h3>
+                <span class="news-date">Новые «Охотники за привидениями»
+                     обзавелись названием</span>
+              </div>   
+        </div>
+        <!--./swiper-slide-->
+        <div class="swiper-slide">
+            <div class="news-card">
+                <h3 class="news-title">19 октября 2019</h3>
+                <span class="news-date">Завершились съёмки новых «Охотников за привидениями»
+                </span>
+             </div>   
+        </div>
+        <!--./swiper-slide-->   
+      </div>
+        <!--./swiper-wrapper-->
+<button class="button-next">
+    <img src="img/arrow.svg" alt="arrow">
+</button>
+      </div>
+        <!--./swiper-container-->  
+</div>
+        <!--./container-->
     </section>
     <script src="js/jquery-3.5.1.min.js"></script>
     <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/swiper.min.js"></script>
     <script src="js/main.js"></script>
 
 </body>
